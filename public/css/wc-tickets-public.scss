@@ -1,0 +1,233 @@
+// Новая стилизация всех форм на сайте
+@import url('https://fonts.googleapis.com/css?family=Oswald:200,300,400,500,600,700&subset=cyrillic');
+
+$color_border: #f5f7f7;
+$color_red: #f92720;
+$font_oswald: 'Oswald', sans-serif;
+
+.ticket-form {
+    .preloader {
+        margin-left: 10px;
+    }
+    .form-row {
+        display: block;
+        margin-bottom: 20px;
+    }
+    // Иконки
+    .icon {
+        display: inline-block;
+        &.icon-camera {
+            background: url(../img/camera.png) center center no-repeat;
+            width: 25px;
+            height: 19px;
+        }
+    }
+    .btn-grey {
+        border-radius: 3px;
+        background-color: #f5f7f7;
+        box-shadow: inset 0 -1px 0 0 #f92720;
+        display: inline-flex;
+        align-items: center;
+        height: 37px;
+        padding: 0 25px;
+        border-radius: 3px;
+        margin-right: 13px;
+        font-size: 10px;
+        text-transform: uppercase;
+        letter-spacing: 0.1em;
+        transition: all 0.3s;
+        line-height: 1;
+        color: $color_red;
+        cursor: pointer;
+        &:hover {
+            background-color: $color_red;
+            color: #ffffff;
+            .icon-camera {
+                &:before {
+                    display: none;
+                }
+                background: url(../img/camera-h.png) center center no-repeat;
+            }
+        }
+        .icon {
+            margin-right: 10px;
+        }
+    }
+    input {
+        &[type=text] {
+            border: 1px solid $color_border;
+            height: 43px;
+            width: 100%;
+        }
+        &[type=file] {
+            display: none;
+        }
+        &[type="submit"] {
+            color: $color_border;
+            text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+            background-color: $color_red;
+            border-color: $color_red;
+            height: 43px;
+            -webkit-border-radius: 0;
+            -moz-border-radius: 0;
+            border-radius: 0;
+            width: 230px;
+            max-width: 100%;
+            font-family: $font_oswald;
+            font-size: 14px;
+            text-transform: uppercase;
+            font-weight: 400;
+            letter-spacing: .05em;
+        }
+    }
+
+}
+span.screen-reader-text {
+    display: none;
+}
+#TB_closeWindow {
+    height: 25px;
+    padding: 11px 25px 10px 0;
+    float: right;
+    position: absolute;
+    top: -11px;
+    right: 0px;
+}
+#TB_caption {
+    height: auto;
+    padding: 7px 30px;
+    float: none;
+    width: 100%;
+    text-align: center;
+    font-size: 18px;
+}
+.tb-close-icon {
+    color: #fff;
+    background: #2e353e;
+}
+.wct-f-list {
+    margin-bottom: 30px;
+    padding: 15px;
+    border: 1px solid #ececec;
+    position: relative;
+    .wctf-overlay {
+        z-index: 22;
+        background: #f9272045;
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        left: 0;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        display: flex;
+        justify-content: center;
+        img{
+            width: 55px;
+        }
+    }
+    .wctf-title {
+        margin-bottom: 15px;
+        text-transform: uppercase;
+        font-weight: 700;
+        font-size: 16px;
+        color: #000;
+    }
+    .wctf-head {
+        margin-bottom: 15px;
+        .wctf-close {
+            font-size: 10px;
+            text-transform: uppercase;
+            padding: 3px 10px;
+            line-height: 1;
+            border-radius: 18px;
+            font-family: Arial;
+            background: #ffffff;
+            color: #fff;
+            border: 1px solid #6dab3c;
+            font-weight: 300;
+            letter-spacing: .05em;
+            outline: none;
+            margin-left: 8px;
+            color: #6dab3c;
+            &.closed {
+                background: #f92720;
+                color: #fff;
+                border-color: #f92720;
+                &:hover {
+                    background: #f92720;
+                    color: #fff;
+                    border-color: #f92720;
+                }
+            }
+            &:hover {
+                background: #6dab3c;
+                color: #ffffff;
+            }
+        }
+        .wctf-collapse {
+            background: url(../img/plus.svg) center center no-repeat;
+            padding: 3px;
+            width: 18px;
+            height: 18px;
+            border: 1px solid #f92720;
+            background-size: 9px;
+            margin-right: 8px;
+            &:focus{
+                outline: none;
+                -webkit-box-shadow: none;
+                -moz-box-shadow: none;
+                box-shadow: none;
+            }
+            &[aria-expanded="true"] {
+                background: url(../img/minus.svg) center center no-repeat;
+                background-size: 9px;
+
+            }
+
+        }
+
+    }
+    .wctf-body {
+        margin-bottom: 20px;
+        max-height: 400px;
+        overflow: auto;
+
+        .comment {
+            position: relative;
+            margin-top: 20px;
+            margin-right: 20px;
+            margin-left: 69px;
+            .comment-atachments {
+                margin: 0px 0 0 0;
+                border-bottom: 1px solid #e5e6e6;
+                padding: 11px 0;
+                line-height: 1;
+            }
+            .comment-author {
+                margin-bottom: 5px;
+                padding-left: 45px;
+                padding-right: 20px;
+                font-size: 16px;
+                font-weight: bold;
+            }
+            .comment-text {
+                padding: 12px 12px 12px 45px;
+                background-color: #f8f8f8;
+                border-bottom: 5px solid #e5e6e6;
+            }
+            .comment-avatar {
+                position: absolute;
+                top: 0;
+                left: -40px;
+                width: 70px;
+                height: 70px;
+                background-color: #7f8c8c;
+                border: 1px solid #f8f8f8;
+                background-size: cover;
+                background-position: center;
+            }
+        }
+
+    }
+}

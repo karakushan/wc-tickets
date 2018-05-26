@@ -1,0 +1,218 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: WC Tickets\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2018-05-25 19:36+0000\n"
+"PO-Revision-Date: 2018-05-25 19:39+0000\n"
+"Last-Translator: rOMANEVGEN <myasnuyrai@gmail.com>\n"
+"Language-Team: Русский\n"
+"Language: ru_RU\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10 >= 2 && "
+"n%10<=4 &&(n%100<10||n%100 >= 20)? 1 : 2);\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Loco https://localise.biz/"
+
+#. Name of the plugin
+#: admin/class-wc-tickets-settings.php:60
+msgid "WC Tickets"
+msgstr ""
+
+#: admin/class-wc-tickets-settings.php:77
+msgid "Basic settings"
+msgstr "Основные настройки"
+
+#: admin/class-wc-tickets-settings.php:84
+msgid "Mail for receiving letters"
+msgstr "Почта для получения уведомлений"
+
+#: admin/class-wc-tickets-settings.php:96
+msgid "Email sender's email"
+msgstr "E-mail отправителя"
+
+#: admin/class-wc-tickets-settings.php:109
+msgid "Sender's name"
+msgstr "Имя отправителя"
+
+#: admin/class-wc-tickets-settings.php:121
+msgid "Email subject"
+msgstr "Тема письма"
+
+#: admin/class-wc-tickets-settings.php:127
+#: public/class-wc-tickets-public.php:377
+#: public/class-wc-tickets-public.php:382
+#: public/class-wc-tickets-public.php:392
+#, php-format
+msgid "Ticket #%d was successfully created."
+msgstr "Тикет #%d успешно создан."
+
+#: admin/class-wc-tickets-settings.php:133
+msgid "Text of letter to the user"
+msgstr "Текст письма отсылаемого пользователю"
+
+#: admin/class-wc-tickets-settings.php:142
+#: public/class-wc-tickets-public.php:378
+#, php-format
+msgid ""
+"You initiated the creation of a ticket on the theme \"%s\". The support "
+"service will send a response to this email."
+msgstr ""
+"Вы инициировали создание тикета с темой \"%s\". Служба поддержки клиентов "
+"даст ответ на этот email."
+
+#: admin/class-wc-tickets-settings.php:211
+msgid "WC Tickets Settings"
+msgstr "Настройки WC Tickets"
+
+#: public/class-wc-tickets-public.php:121
+#: public/class-wc-tickets-public.php:137
+#: public/class-wc-tickets-public.php:145 public/partials/tickets-form.php:47
+msgid "Closed"
+msgstr "Закрыт"
+
+#: public/class-wc-tickets-public.php:150
+#, php-format
+msgid "Closed <span class=\"count\">(%s)</span>"
+msgid_plural "Closed <span class=\"count\">(%s)</span>"
+msgstr[0] "Закрыт <span class=\"count\">(%s)</span>"
+msgstr[1] "Закрыт <span class=\"count\">(%s)</span>"
+msgstr[2] "Закрыт <span class=\"count\">(%s)</span>"
+
+#: public/class-wc-tickets-public.php:159
+msgid "Ticket Messages"
+msgstr "Сообщения тикета"
+
+#: public/class-wc-tickets-public.php:188
+msgid "Tickets"
+msgstr "Тикеты"
+
+#: public/class-wc-tickets-public.php:289
+msgid "The request did not pass the security check"
+msgstr "Этот запрос не прошёл проверку безопасности"
+
+#: public/class-wc-tickets-public.php:370
+#, php-format
+msgid "Ticket #%d - \"%s\". User message."
+msgstr "Тикет #%d - \"%s\". Сообщение пользователя."
+
+#: public/class-wc-tickets-public.php:371
+#, php-format
+msgid "User: \"%s\""
+msgstr "Пользователь: \"%s\""
+
+#: public/class-wc-tickets-public.php:372
+#, php-format
+msgid "First Name Last Name: \"%s\""
+msgstr "Имя Фамилия: \"%s\""
+
+#: public/class-wc-tickets-public.php:373
+#: public/class-wc-tickets-public.php:384
+#, php-format
+msgid "Message: \"%s\""
+msgstr "Сообщение: \"%s\""
+
+#: public/class-wc-tickets-public.php:383
+#, php-format
+msgid "Subject: \"%s\""
+msgstr "Тема: \"%s\""
+
+#: public/class-wc-tickets-public.php:441 public/partials/tickets-form.php:24
+msgid "Complaints and suggestions"
+msgstr "Жалобы и предложения"
+
+#: public/class-wc-tickets-public.php:483
+#, php-format
+msgid "Ticket #%d - \"%s\". Support Response."
+msgstr "Тикет #%d - \"%s\". Ответ поддержки."
+
+#: public/partials/ticket-metabox.php:3
+msgid "New messages are displayed at the top of the list"
+msgstr "Новые сообщения отображаются в самом верху списка"
+
+#: public/partials/ticket-metabox.php:25 public/partials/tickets-form.php:75
+msgid "Attachments"
+msgstr "Вложения"
+
+#: public/partials/ticket-metabox.php:40
+msgid "Your Answer"
+msgstr "Ваш ответ"
+
+#: public/partials/ticket-metabox.php:59
+msgid "Close ticket"
+msgstr "Закрыть тикет"
+
+#: public/partials/ticket-metabox.php:61
+msgid "Replay"
+msgstr "Ответить"
+
+#: public/partials/ticket-metabox.php:64
+msgid "This ticket is closed for training."
+msgstr "Этот тикет уже закрыт для обсуждения"
+
+#: public/partials/tickets-form.php:30
+msgid "List of references"
+msgstr "Ваши обращения"
+
+#: public/partials/tickets-form.php:45
+msgid ""
+"Click here to close the correspondence now or it will be closed "
+"automatically after a while."
+msgstr ""
+"Нажмите сюда чтобы закрыть переписку сейчас или она будет закрыта "
+"автоматически спустя некоторое время."
+
+#: public/partials/tickets-form.php:45
+msgid "The question is settled"
+msgstr "Вопрос решен"
+
+#: public/partials/tickets-form.php:108
+msgid "New ticket or continue"
+msgstr "Новая тема или продолжить начатую"
+
+#: public/partials/tickets-form.php:110
+msgid "New Ticket"
+msgstr "Новая тема"
+
+#: public/partials/tickets-form.php:126
+msgid "Topic Title"
+msgstr "Название темы"
+
+#: public/partials/tickets-form.php:131
+msgid "Your name"
+msgstr "Ваше имя"
+
+#: public/partials/tickets-form.php:138
+msgid "Your complaint or suggestion"
+msgstr "Ваши жалобы и предложения"
+
+#: public/partials/tickets-form.php:158
+msgid "Attach a photo"
+msgstr "Прикрепить фото"
+
+#: public/partials/tickets-form.php:163
+msgid "Send"
+msgstr ""
+"Отправить\n"
+"\n"
+
+#. Description of the plugin
+msgid ""
+"Plugin allows you to create a ticket system for your online store on "
+"Woocommerce"
+msgstr ""
+"Плагин позволяет создать систему тикетов для вашего интернет магазина на "
+"Woocommerce"
+
+#. URI of the plugin
+msgid "https://profglobal.pro/download/wc-tickets/"
+msgstr ""
+
+#. Author of the plugin
+msgid "Vitaliy Karakushan"
+msgstr "Виталий Каракушан"
+
+#. URI of the plugin
+#. Author URI of the plugin
+msgid "http://profglobal.pro/"
+msgstr ""

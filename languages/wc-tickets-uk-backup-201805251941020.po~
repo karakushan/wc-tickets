@@ -1,0 +1,206 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: WC Tickets\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2018-05-25 18:27+0000\n"
+"PO-Revision-Date: 2018-05-25 18:29+0000\n"
+"Last-Translator: rOMANEVGEN <myasnuyrai@gmail.com>\n"
+"Language-Team: Ukrainian\n"
+"Language: uk\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10 >= 2 && "
+"n%10<=4 &&(n%100<10||n%100 >= 20)? 1 : 2);\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Loco https://localise.biz/"
+
+#. Name of the plugin
+#: admin/class-wc-tickets-settings.php:60
+msgid "WC Tickets"
+msgstr ""
+
+#: admin/class-wc-tickets-settings.php:77
+msgid "Basic settings"
+msgstr "Головні настройки"
+
+#: admin/class-wc-tickets-settings.php:84
+msgid "Mail for receiving letters"
+msgstr "Пошта для отримання повідомлень"
+
+#: admin/class-wc-tickets-settings.php:96
+msgid "Email sender's email"
+msgstr "E-mail відправника"
+
+#: admin/class-wc-tickets-settings.php:109
+msgid "Sender's name"
+msgstr "Ім`я відправника"
+
+#: admin/class-wc-tickets-settings.php:121
+msgid "Email subject"
+msgstr "Тема повідомлення"
+
+#: admin/class-wc-tickets-settings.php:127
+#: public/class-wc-tickets-public.php:366
+#: public/class-wc-tickets-public.php:371
+#: public/class-wc-tickets-public.php:381
+#, php-format
+msgid "Ticket #%d was successfully created."
+msgstr "Тікет #%d успішно створено."
+
+#: admin/class-wc-tickets-settings.php:133
+msgid "Text of letter to the user"
+msgstr "Текст повідомлення"
+
+#: admin/class-wc-tickets-settings.php:142
+#: public/class-wc-tickets-public.php:367
+#, php-format
+msgid ""
+"You initiated the creation of a ticket on the theme \"%s\". The support "
+"service will send a response to this email."
+msgstr ""
+"Ви ініціювали створення тікета с темою \"%s\". Служба підтримки дасть "
+"відповідь на цей email."
+
+#: admin/class-wc-tickets-settings.php:211
+msgid "WC Tickets Settings"
+msgstr "Налаштування WC Tickets"
+
+#: public/class-wc-tickets-public.php:121
+#: public/class-wc-tickets-public.php:137
+#: public/class-wc-tickets-public.php:145 public/partials/tickets-form.php:45
+msgid "Closed"
+msgstr "Закрито"
+
+#: public/class-wc-tickets-public.php:150
+#, php-format
+msgid "Closed <span class=\"count\">(%s)</span>"
+msgid_plural "Closed <span class=\"count\">(%s)</span>"
+msgstr[0] "Закрито <span class=\"count\">(%s)</span>"
+msgstr[1] "Закрито <span class=\"count\">(%s)</span>"
+msgstr[2] ""
+
+#: public/class-wc-tickets-public.php:159
+msgid "Ticket Messages"
+msgstr "Повідомлення тікета"
+
+#: public/class-wc-tickets-public.php:188
+msgid "Tickets"
+msgstr "Тікети"
+
+#: public/class-wc-tickets-public.php:285
+msgid "Возникла ошибка"
+msgstr ""
+
+#: public/class-wc-tickets-public.php:361
+#, php-format
+msgid "Ticket #%d - \"%s\". User message."
+msgstr "Тікет #%d - \"%s\". Повідомлення користувача."
+
+#: public/class-wc-tickets-public.php:362
+#: public/class-wc-tickets-public.php:373
+#, php-format
+msgid "Message: \"%s\""
+msgstr "Повідомлення: \"%s\""
+
+#: public/class-wc-tickets-public.php:372
+#, php-format
+msgid "Subject: \"%s\""
+msgstr "Тема: \"%s\""
+
+#: public/class-wc-tickets-public.php:430 public/partials/tickets-form.php:24
+msgid "Complaints and suggestions"
+msgstr "Скарги та пропозиції"
+
+#: public/class-wc-tickets-public.php:472
+#, php-format
+msgid "Ticket #%d - \"%s\". Support Response."
+msgstr "Тікет #%d - \"%s\". Відповідь служби підтримки."
+
+#: public/partials/ticket-metabox.php:3
+msgid "New messages are displayed at the top of the list"
+msgstr "Нові повідомлення завжди відображаються в самому верху списку."
+
+#: public/partials/ticket-metabox.php:25 public/partials/tickets-form.php:73
+msgid "Attachments"
+msgstr "Вкладення"
+
+#: public/partials/ticket-metabox.php:40
+msgid "Your Answer"
+msgstr "Ваша відповідь"
+
+#: public/partials/ticket-metabox.php:59
+msgid "Close ticket"
+msgstr "Закрити тікет"
+
+#: public/partials/ticket-metabox.php:61
+msgid "Replay"
+msgstr "Відповісти"
+
+#: public/partials/ticket-metabox.php:64
+msgid "This ticket is closed for training."
+msgstr "Цей тікет вже закрито для обговорень."
+
+#: public/partials/tickets-form.php:28
+msgid "List of references"
+msgstr "Ваші звернення"
+
+#: public/partials/tickets-form.php:43
+msgid ""
+"Click here to close the correspondence now or it will be closed "
+"automatically after a while."
+msgstr ""
+"Натисніть сюди щоб закрити переписку зараз або вона буде закрита автоматично "
+"через деякий час."
+
+#: public/partials/tickets-form.php:43
+msgid "The question is settled"
+msgstr "Проблему вирішено"
+
+#: public/partials/tickets-form.php:106
+msgid "New ticket or continue"
+msgstr "Нова тема чи продовжити розпочату"
+
+#: public/partials/tickets-form.php:108
+msgid "New Ticket"
+msgstr "Нова тема"
+
+#: public/partials/tickets-form.php:124
+msgid "Topic Title"
+msgstr "Назва теми"
+
+#: public/partials/tickets-form.php:129
+msgid "Your name"
+msgstr "Ваше ім`я"
+
+#: public/partials/tickets-form.php:136
+msgid "Your complaint or suggestion"
+msgstr "Ваша скарга або пропозиція"
+
+#: public/partials/tickets-form.php:156
+msgid "Attach a photo"
+msgstr "Прикріпити фото"
+
+#: public/partials/tickets-form.php:161
+msgid "Send"
+msgstr "Відправити"
+
+#. Description of the plugin
+msgid ""
+"Plugin allows you to create a ticket system for your online store on "
+"Woocommerce"
+msgstr ""
+"Плагін дозволяє створити систему тікетів для вашого інтернет магазину на "
+"Woocommerce"
+
+#. URI of the plugin
+msgid "https://profglobal.pro/download/wc-tickets/"
+msgstr ""
+
+#. Author of the plugin
+msgid "Vitaliy Karakushan"
+msgstr "Віталій Каракушан"
+
+#. URI of the plugin
+#. Author URI of the plugin
+msgid "http://profglobal.pro/"
+msgstr ""
