@@ -112,7 +112,7 @@ $query = new WP_Query( array(
 		wp_reset_query();
 		$query = new WP_Query( array(
 			'post_type'      => $this->post_type,
-			'post_author'    => $current_user->ID,
+			'author'    => $current_user->ID,
 			'post_status'    => 'publish',
 			'posts_per_page' => - 1
 		) ) ?>
