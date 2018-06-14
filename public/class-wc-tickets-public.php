@@ -94,7 +94,9 @@ class Wc_Tickets_Public {
 		add_action( 'wp_ajax_wct_close_ticket', array( $this, 'wct_close_ticket_callback' ) );
 		add_action( 'wp_ajax_nopriv_wct_close_ticket', array( $this, 'wct_close_ticket_callback' ) );
 
-		add_filter( 'the_editor', array( $this, 'add_required_attribute_to_wp_editor' ), 10, 1 );
+		if ( ! is_admin() ) {
+			add_filter( 'the_editor', array( $this, 'add_required_attribute_to_wp_editor' ), 10, 1 );
+		}
 
 	}
 
