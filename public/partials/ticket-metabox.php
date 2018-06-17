@@ -37,7 +37,7 @@
 
 <?php if ( $post->post_status != 'closed' ): ?>
   <p>
-    <label for=""><?php _e( 'Your Answer', 'wc-tickets' ); ?></label>
+    <label for="wc-tickets-reply"><?php _e( 'Your Answer', 'wc-tickets' ); ?></label>
 	  <?php
 	  wp_editor( '', 'wc-tickets-reply', array(
 		  'wpautop'          => 1,
@@ -61,7 +61,7 @@
     <button type="submit" class="button button-primary button-large"><?php _e( 'Replay', 'wc-tickets' ); ?></button>
   </p>
 <?php else: ?>
-  <p><?php _e( 'This ticket is closed for training.', 'wc-tickets' ); ?></p>
+  <p><?php _e( 'This ticket is closed.', 'wc-tickets' ); ?></p>
 <?php endif; ?>
 
 <style>

@@ -197,6 +197,11 @@ class Wc_Tickets_Public {
 	function register_post_types() {
 		register_post_type( $this->post_type, array(
 			'label'               => __( 'Tickets', 'wc-tickets' ),
+			'labels' => array(
+				'add_new'            => __( 'New Ticket', 'wc-tickets' ), // для добавления новой записи
+				'add_new_item'       => __( 'New Ticket', 'wc-tickets' ), // заголовка у вновь создаваемой записи в админ-панели.
+
+			),
 			'public'              => true,
 			'publicly_queryable'  => false,
 			'exclude_from_search' => true,

@@ -63,7 +63,9 @@ class Wc_Tickets_Admin {
 		$this->version     = $version;
 		$this->settings    = new Wc_Tickets_Settings();
 
-
+		// Add the custom columns
+		add_filter( 'manage_wc-tickets_posts_columns', array( $this, 'set_custom_edit_tickets_columns' ) );
+		add_action( 'manage_wc-tickets_posts_custom_column', array( $this, 'custom_tickets_column' ), 10, 2 );
 	}
 
 	/**
@@ -111,5 +113,49 @@ class Wc_Tickets_Admin {
 		wp_enqueue_script( $this->plugin_name, plugin_dir_url( __FILE__ ) . 'js/wc-tickets-admin.js', array( 'jquery' ), $this->version, false );
 
 	}
+
+
+	function set_custom_edit_tickets_columns( $columns ) {
+		$new_columns = [];
+		$count       = 0;
+		if ( count( $columns ) ) {
+			foreach ( $columns as $key => $column ) {
+				$new_columns[ $key ] = $column;
+				if ( $count == 1 ) {
+					$new_columns['wct-ititiator'] = __( 'Initiator', 'wc-tickets' );
+					$new_columns['wct-messages']  = __( 'Messages', 'wc-tickets' );
+				}
+				$count ++;
+			}
+		}
+
+		return $new_columns;
+	}
+
+	function custom_tickets_column( $column, $post_id ) {
+
+		$post = get_post( $post_id );
+		$user = get_user_by( 'ID', $post->post_author );
+
+		switch ( $column ) {
+			case 'wct-ititiator' :
+				echo get_avatar( $post->post_author, 60 );
+				echo '<div class="user-data">';
+				echo '<b>' . $user->first_name . ' ' . $user->last_name . '</b>';
+				echo '<span class="user-email">' . $user->user_email . '</span>';
+				echo '<a href="' . esc_url( get_edit_user_link( $post->post_author ) ) . '">' . esc_html( $user->data->user_login ) . '</a>';
+				echo '</div>';
+				break;
+			case 'wct-messages':
+				$tickets     = get_post_meta( $post_id, '_wc_ticket', 0 );
+				$last_ticket = end( $tickets );
+				$user_last   = get_user_by( 'ID', intval( $last_ticket['author'] ) );
+				echo '<div class="messages-total">' . sprintf( __( '<b>Total:</b> %d', 'wc-tickets' ), count( $tickets ) ) . '</div>';
+				echo '<div class="messages-last">' . sprintf( __( '<b>%s writes:</b> %s', 'wc-tickets' ), $user_last->first_name, $last_ticket['message'] ) . '</div>';
+				break;
+
+		}
+	}
+
 
 }

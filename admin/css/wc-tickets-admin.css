@@ -36,4 +36,15 @@
     font-size: 12px;
     color: #bdc3c7; }
 
+.wct-ititiator {
+  display: flex;
+  align-items: center; }
+  .wct-ititiator .avatar {
+    border-radius: 50%;
+    float: left;
+    margin-right: 10px; }
+  .wct-ititiator .user-data {
+    display: flex;
+    flex-direction: column; }
+
 /*# sourceMappingURL=wc-tickets-admin.css.map */
